@@ -1,0 +1,219 @@
+body {
+    font-family: roboto;
+    margin: 0;
+    padding: 0;
+}
+
+.main-nav-bar {
+    height: 90px;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    padding: 0px 30px;
+    z-index: 2;
+    color: white;
+}
+.main-nav-bar .leftComponents {
+    font-size: 20px;
+    font-weight: bold;
+    width: 100px;
+    font-family: 'Merienda', cursive;
+}
+.main-nav-bar .rightComponents {
+    width: 600px;
+    text-align: center;
+}
+.main-nav-bar .rightComponents a {
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    width: 100px;
+    height: 35px;
+    line-height: 35px;
+    margin: 0px 5px;
+    color: white;
+    transition: all 0.3s ease;
+}
+.main-nav-bar .rightComponents a:hover {
+    background-color: white;
+    color: black;
+}
+
+.titleStyle {
+    font-size: 40px;
+    font-weight: 500;
+    margin-left: 20px;
+}
+
+#header {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+#header .hotelImg {
+    margin: 0;
+    position: absolute;
+    filter: brightness(50%);
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 50% 0%;
+    overflow: hidden;
+    background-size: cover;
+
+    z-index: 0;
+}
+#header .hotelInfo {
+    width: 50vw;
+    height: 20vw;
+    position: absolute;
+    top: 40vh;
+    left: 25vw;
+    z-index: 1;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.hotelInfo h1 {
+    font-size: 50px;
+    padding: 0px;
+    margin: 0px;
+    width: 100%;
+    text-align: center;
+}
+.hotelInfo h1 em {
+    /* font-family: 'Lobster', cursive; */
+    font-size: 40px;
+    font-weight: 400;
+}
+.hotelInfo div {
+    font-family: 'Kaushan Script', cursive;
+    font-size: 30px;
+    width: 100%;
+    text-align: center;
+}
+.hotelInfo div span {
+    color: yellow;
+}
+
+#content {
+    /* margin-top: 40px; */
+}
+
+#services {
+    
+}
+
+.serviceTitle {
+    padding-top: 30px;
+    margin-bottom: 0px;
+}
+
+.servicesContainer {
+    margin-top: 10px;
+}
+
+.servicesStyle {
+    padding: 30px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.servicesStyle h1 {
+    font-size: 30px;
+}
+.servicesStyle h1 i {
+    font-size: 40px;
+}
+.servicesStyle p {
+    font-size: 15px;
+    text-align: justify;
+}
+
+#decoration {
+    /* margin-top: 40px; */
+}
+.decorationTitle {
+    padding-left: 30px;
+    font-size: 30px;
+}
+.row {
+    margin: 0;
+}
+.imageContainer {
+    /* width: 100%;
+    /* margin-top: 20px; */
+    height: 320px;
+    overflow: hidden;
+    position: relative;
+}
+.imageContainer img {
+    height: 100%;
+    width: 100%;
+    transition: all 0.5s ease-in-out;
+    position: absolute;
+    object-fit: cover;
+    z-index: 1;
+}
+.imageContainer img:hover {
+    transform: scale(1.1);
+    opacity: 0.4;
+}
+.imageCaption {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0);
+    position: absolute;
+    z-index: 0;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.imageContainer p {
+    width: 100%;
+    text-align: center;
+}
+.imageContainer h1 {
+    width: 100%;
+    text-align: center;
+}
+
+#employees {
+    margin: 50px 0px;
+}
+#employees .titleStyle {
+    margin-bottom: 50px;
+}
+
+.employeeContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+    overflow: hidden;
+}
+.employeeContainer img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    object-position: 50% 0%;
+    border-radius: 100px;
+    /* border-color: black;
+    border-width: 1px;
+    border-style: solid; */
+    box-shadow: 2px 5px 5px #888888;
+}
+.employeeContainer h5 {
+    margin-top: 20px;
+}
