@@ -30,6 +30,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Merienda&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Newsreader:wght@200;300&display=swap" rel="stylesheet">
 
   </head>
   <body>
@@ -38,21 +40,58 @@
       <div class="rightComponents">
           <a href="#header">Home</a>
           <a href="#services">Services</a>
-          <a href="#">Decoration</a>
-          <a href="#">Employees</a>
-          <a href="#">Booking</a>
+          <a href="#decoration">Decoration</a>
+          <a href="#employees">Employees</a>
+          <a class="bookingTab" href="#">Booking</a>
       </div>
     </nav>
     
     <section id="header">
-        <img src="img/hotel.jpg" alt="Hotel Image" class="hotelImg">
+        <img src="img/Hotel.jpg" alt="Hotel Image" class="hotelImg">
         <div class="hotelInfo">
             <h1><em>SINCE 1998</em></h1>
-            <div>We take care of our client</div>
-            <div><span id="rotating-text">
+            <div class="titleDiv">ENJOY A LUXURY</div>
+            <div class="titleDiv">EXPERIENCE</div>
+            <div class="midLetter">We take care of our client</div>
+            <div class="rotateDiv"><span id="rotating-text">
               enjoy,comfortable,environment,happiness,relax
             </span>.</div>
         </div>
+
+        <div class="bookingInfo">
+          <div class="bookingTabs">
+            <h5>Check-in date</h5>
+          <input type="date">
+          </div>
+          <div class="bookingTabs">
+            <h5>Check-out date</h5>
+          <input type="date">
+          </div>
+          <div class="bookingTabs">
+            <h5>Adults</h5>
+            <select name="Adult" class="selectOption">
+              <option value="One">One</option>
+              <option value="Two">Two</option>
+              <option value="Three">Three</option>
+              <option value="Four">Four</option>
+              <option value="Five">Five</option>
+            </select>
+          </div>
+          <div class="bookingTabs">
+            <h5>Children</h5>
+            <select name="Children" class="selectOption">
+              <option value="One">One</option>
+              <option value="Two">Two</option>
+              <option value="Three">Three</option>
+              <option value="Four">Four</option>
+              <option value="Five">Five</option>
+            </select>
+          </div>
+          <div class="bookingTabs">
+            <button>CHECK AVALIABILITY</button>
+          </div>
+        </div>
+        
     </section>
 
     <section id="content">
@@ -141,34 +180,87 @@
         <div class="titleStyle">Our Professional Employees</div>
         <div class="row">
           <div class="col-lg-3 col-md-6 employeeContainer">
-            <img src="img/CEO.jpg" alt="Employee Image">
+            <div class="employeeInfo">
+              <img src="img/CEO.jpg" alt="Employee Image">
+              <div class="info">
+                <i class="fab fa-facebook"></i>
+                <i class="fas fa-envelope"></i>
+                <i class="fab fa-linkedin"></i>
+              </div>
+            </div>
             <h5>CEO</h5>
           </div>
           <div class="col-lg-3 col-md-6 employeeContainer">
-            <img src="img/Managing Director.jpg" alt="Employee Image">
+            <div class="employeeInfo">
+              <img src="img/Managing Director.jpg" alt="Employee Image">
+              <div class="info">
+                <i class="fab fa-facebook"></i>
+                <i class="fas fa-envelope"></i>
+                <i class="fab fa-linkedin"></i>
+              </div>
+            </div>
             <h5>Managing Director</h5>
           </div>
           <div class="col-lg-3 col-md-6 employeeContainer">
-            <img src="img/Supervisor.jpg" alt="Employee Image">
+            <div class="employeeInfo">
+              <img src="img/Supervisor.jpg" alt="Employee Image">
+              <div class="info">
+                <i class="fab fa-facebook"></i>
+                <i class="fas fa-envelope"></i>
+                <i class="fab fa-linkedin"></i>
+              </div>
+            </div>
             <h5>Supervisor</h5>
           </div>
           <div class="col-lg-3 col-md-6 employeeContainer">
-            <img src="img/Secretary.jpg" alt="Employee Image">
+            <div class="employeeInfo">
+              <img src="img/Secretary.jpg" alt="Employee Image">
+              <div class="info">
+                <i class="fab fa-facebook"></i>
+                <i class="fas fa-envelope"></i>
+                <i class="fab fa-linkedin"></i>
+              </div>
+            </div>
             <h5>Secretary</h5>
           </div>
           <div class="col-lg-3 col-md-6 employeeContainer">
-            <img src="img/Manager.jpg" alt="Employee Image">
+            <div class="employeeInfo">
+              <img src="img/Manager.jpg" alt="Employee Image">
+              <div class="info">
+                <i class="fab fa-facebook"></i>
+                <i class="fas fa-envelope"></i>
+                <i class="fab fa-linkedin"></i>
+              </div>
+            </div>
             <h5>Manager</h5>
           </div>
           <div class="col-lg-3 col-md-6 employeeContainer">
-            <img src="img/Waitress.jpg" alt="Employee Image">
+            <div class="employeeInfo">
+              <img src="img/Waitress.jpg" alt="Employee Image">
+              <div class="info">
+                <i class="fab fa-facebook"></i>
+                <i class="fas fa-envelope"></i>
+                <i class="fab fa-linkedin"></i>
+              </div>
+            </div>
             <h5>Waitress</h5>
           </div>
           <div class="col-lg-3 col-md-6 employeeContainer">
-            <img src="img/Waiter.jpg" alt="Employee Image">
+            <div class="employeeInfo">
+              <img src="img/Waiter.jpg" alt="Employee Image">
+              <div class="info">
+                <i class="fab fa-facebook"></i>
+                <i class="fas fa-envelope"></i>
+                <i class="fab fa-linkedin"></i>
+              </div>
+            </div>
             <h5>Waiter</h5>
           </div>
         </div>
+      </div>
+
+      <div id="booking">
+        
       </div>
     </section>
 
