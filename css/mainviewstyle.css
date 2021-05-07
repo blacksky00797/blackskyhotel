@@ -232,6 +232,26 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     }
 }
 
+@media only screen and (max-width: 505px) {
+    #header .hotelInfo {
+        top: 25vh;
+    }
+    .hotelInfo .titleDiv {
+        font-size: 15px;
+        height: 25px;
+    }
+}
+@media only screen and ( min-width: 1000px) {
+    #header .hotelInfo {
+        top: 30vh;
+    }
+}
+@media only screen and ( min-width: 1100px) {
+    #header .hotelInfo {
+        top: 0vh;
+    }
+}
+
 #content {
     /* margin-top: 40px; */
 }
