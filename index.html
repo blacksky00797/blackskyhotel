@@ -2,7 +2,6 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <title>Blacksky Hotel</title>
@@ -19,6 +18,11 @@
     <!-- Morphext CSS -->
     <link rel="stylesheet" href="css/morphext.css">
 
+    <!-- Owl Carousel CSS -->
+    <link rel="stylesheet" href="css/owl.carousel.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+
     <!-- My custom css style -->
     <link rel="stylesheet" href="css/mainviewstyle.css">
 
@@ -32,6 +36,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Merienda&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Newsreader:wght@200;300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Marck+Script&display=swap" rel="stylesheet">
 
   </head>
   <body>
@@ -59,7 +65,43 @@
     </nav>
     
     <section id="header">
-        <img src="img/hotel.jpg" alt="Hotel Image" class="hotelImg">
+        <!-- <div class="owl-carousel">
+          <img src="img/hotel1.jpg" alt="Hotel Image" class="hotelImg">
+          <img src="img/hotel2.jpg" alt="Hotel Image" class="hotelImg">
+          <img src="img/hotel3.jpg" alt="Hotel Image" class="hotelImg">
+          <img src="img/hotel4.jpg" alt="Hotel Image" class="hotelImg">
+          <img src="img/hotel5.jpg" alt="Hotel Image" class="hotelImg">
+          <img src="img/hotel6.jpg" alt="Hotel Image" class="hotelImg">
+          <img src="img/hotel7.jpg" alt="Hotel Image" class="hotelImg">
+        </div> -->
+
+        <div id="carouselExampleSlidesOnly" class="carousel slide hotelImgContainer" data-bs-ride="carousel" >
+          <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="100">
+              <img src="img/hotel1.jpg" class="" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="img/hotel2.jpg" class="" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="img/hotel3.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="img/hotel4.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="img/hotel5.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="img/hotel6.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="img/hotel7.jpg" class="d-block w-100" alt="...">
+            </div>
+          </div>
+        </div>
+
+
         <div class="hotelInfo">
             <h1><em>SINCE 1998</em></h1>
             <div class="titleDiv">ENJOY A LUXURY</div>
@@ -287,6 +329,10 @@
 
     <!-- Morphext JS -->
     <script src="js/morphext.js"></script>
+
+    <!-- Owl Carousel JS -->
+    <script src="js/owl.carousel.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
 
     <!-- My custom js -->
     <script src="js/mainviewscript.js"></script>
