@@ -23,16 +23,6 @@ $("#rotating-text").Morphext({
 
 changeHotelImageBackgroundAlgorithm();
 
-// $(".owl-carousel").owlCarousel({
-//     items: 1,
-//     loop: true,
-//     margin: 0,
-//     autoplay: true,
-//     autoplayTimeout: 3000,
-//     autoplayHoverPause: false,
-//     animateOut: 'fadeOut'    
-// });
-
 let mainNavBar = $(".main-nav-bar");
 let secondaryNavBar = $(".secondary-nav-bar");
 let menuButton = $(".main-nav-bar .nav-bar-menu");
@@ -52,16 +42,17 @@ closeButton.click( () => {
 function changeHotelImageBackgroundAlgorithm() {
     for ( let id=0 ; id<7200 ; id++ ) {
         setTimeout( () => {
-            getHotelImg.css("filter","brightness(10%)");
+            getHotelImg.css("filter","brightness(0%)");
             
             setTimeout(() => {
                 getHotelImg.attr("src",hotelImgList[hotelImgIndex]);
                 getHotelImg.css("filter","brightness(50%)");
-            }, 300);
+            }, 1000);
             ++hotelImgIndex;
             if ( hotelImgIndex == hotelImgList.length ) hotelImgIndex=0;
         },id*(imgRotateSec*1000)); 
         
     }
-    
 }
+
+
