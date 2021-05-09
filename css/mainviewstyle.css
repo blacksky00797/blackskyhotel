@@ -126,7 +126,7 @@ body {
     background-size: cover;
     overflow: hidden;
     z-index: 0;
-    transition: all 0.5s ease;
+    transition: all 1s ease;
 }
 /* .carousel,.item,.active{
     width: 100%;
@@ -323,6 +323,12 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     }
 }
 
+@media only screen and (min-width: 870px ) {
+    .imageContainer {
+        height: 290px;
+    }
+}
+
 @media only screen and ( min-width: 1000px) {
     #header .hotelInfo {
         top: 30vh;
@@ -481,4 +487,115 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 
 .employeeContainer h5 {
     margin-top: 20px;
+}
+
+
+#footer {
+    background-color: black;
+    color: white;
+}
+#footer .titleStyle {
+    padding: 40px 0px;
+    font-family: 'Merienda', cursive;
+    
+}
+
+.contantContainer .leftSide .left {
+    text-align: right;
+    font-family: 'Merienda', cursive;
+    /* white-space: pre-wrap; */
+}
+.normalLabel {
+    height: 40px;
+    line-height: 40px;
+    margin-bottom: 20px;
+    padding: 0px;
+}
+.textFormStyle {
+    height: 40px;
+    width: 60%;
+    line-height: 40px;
+    border-radius: 5px;
+}
+.addressLabel {
+    height: 80px;
+    line-height: 80px;
+    margin-bottom: 20px;
+}
+.addressFormStyle {
+    height: 80px;
+    width: 80%;
+    border-radius: 5px;
+}
+.messageLabel {
+    height: 150px;
+    line-height: 150px;
+    margin-bottom: 50px;
+    text-align: left     ;
+}
+.messageFormStyle {
+    height: 150px;
+    width: 80%;
+    border-radius: 5px;
+}
+
+
+@media only screen and ( max-width: 575px ) {
+    .normalLabel,.textFormStyle,.addressLabel,.addressLabel,
+    .messageLabel,.messageFormStyle {
+        margin: 0px;
+    }
+    .addressLabel,.messageLabel {
+        height: 50px;
+        line-height: 50px;
+    }
+    .contantContainer .leftSide .left {
+        text-align: left;
+        /* white-space: pre-wrap; */
+    }
+}
+
+.hotelFinalInfoTitle {
+    font-size: 40px;
+    font-weight: 600;
+}
+.hotelFinalInfo {
+    width: 100%;
+    text-align: justify;
+    padding: 20px 50px 20px 0px ;
+    opacity: 0.9;
+}
+.breakLine {
+    width: 95%;
+    height: 0.1mm;
+    padding-right: 50px;
+    background-color: white;
+    opacity: 0.8;
+}
+
+.findMoreInfoTitle {
+    margin: 15px 0 20px 0;
+    font-size: 30px;
+    font-weight: 500;
+}
+
+.findMoreInfoComponents {
+    width: 80%;
+}
+.findMoreInfoComponents i {
+    text-align: center;
+    font-size: 40px;
+    margin: 15px 0;
+    opacity: 1;
+}
+.findMoreInfoComponents i:hover {
+    opacity: 0.5;
+}
+
+
+.copyrightText {
+    text-align: center;
+    padding: 30px 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
 }
