@@ -14,7 +14,7 @@ body {
 .main-nav-bar {
     visibility: visible;
     height: 90px;
-    width: 100%;
+    width: 100vw;
     background-color: rgba(0, 0, 0, 0.5);
     display: flex;
     flex-direction: row;
@@ -114,28 +114,34 @@ body {
     height: 100vh;
     position: relative;
 }
-#header .hotelImgContainer {
+#header .hotelImg {
+    opacity: 1;
     margin: 0;
     position: absolute;
     filter: brightness(50%);
     width: 100%;
     height: 100%;
+    object-fit: cover;
+    object-position: 50% 0%;
+    background-size: cover;
     overflow: hidden;
     z-index: 0;
+    transition: all 0.5s ease;
 }
-.carousel,.item,.active{
+/* .carousel,.item,.active{
+    width: 100%;
     height:100%;
   }
 .carousel-inner {
     height: 100%;
-}
-#header .hotelImgContainer img {
+} */
+/* #header .hotelImgContainer img {
     width: 100%;
     height: 100%;
     object-fit: cover;
     object-position: 50% 0%;
     background-size: cover;
-}
+} */
 #header .hotelInfo {
     width: 50vw;
     height: 40vw;
@@ -196,7 +202,7 @@ body {
 .bookingInfo {
     position: absolute;
     bottom: 50px;
-    width: 100vw;
+    width: 100%;
     text-align: center;
 }
 
